@@ -1,12 +1,12 @@
 import "./App.css";
-import Comptador from "./Comptador";
 import Graella from "./Graella";
+//import Comptador from "./Comptador";
 
 function App() {
   return (
     <div className="App">
-      <Comptador />
       <Graella />
+      {/*<Comptador />*/}
     </div>
   );
 }
