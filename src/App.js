@@ -5,7 +5,7 @@ import Graella from "./Graella";
 function App() {
   return (
     <div className="App">
-      {<Comptador />}
+      <Comptador />
       <Graella />
     </div>
   );
