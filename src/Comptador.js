@@ -21,7 +21,6 @@ export default function Comptador() {
       <button id="botoMes5" onClick={() => incrementa(5)}>
         +5
       </button>
-      <div id="separador2"></div>
     </div>
   );
 }

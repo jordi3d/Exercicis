@@ -6,14 +6,8 @@
     align-items: center;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 10px;
-    margin: 20px;
-}
-
-#separador1 {
-    display: flex;
-    flex-flow: row wrap;
-    height: 40px;
+    gap: 0px 10px;
+    margin: 40px;
 }
 
 #botoDisp {
@@ -63,22 +57,17 @@
 
 #botoMes5 {
     background-color: wheat;
-    width: 217px;
+    width: 218px;
     height: 40px;
     border: 2px solid black;
-    /*flex-direction: row;
-    flex-flow: column wrap;
-    flex-wrap: wrap;
-    flex-grow: 3;
+    flex-direction: row;
+    /*flex-flow: column wrap;*/
+    align-content: center;
+    /*flex-wrap: wrap;
     align-content: flex-start;*/
-    margin-top: -70px;
-    margin-left: 14px;
-    padding: 6px 95px;
+    margin-top: -30px;
+    /*
+    margin-left: 12px;*/
+    padding: 6px 90px;
     font-size: x-large;
-}
-
-#separador2 {
-    display: flex;
-    flex-flow: row wrap;
-    height: 100px;
 }
