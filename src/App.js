@@ -4,7 +4,6 @@ import Comptador from "./Comptador";
 function App() {
   return (
     <div className="App">
-      HOLA
       <Comptador />
     </div>
   );

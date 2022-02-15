@@ -1,3 +1,84 @@
-div {
-    display: flexbox;
+#comptadorWindow {
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 20px;
+}
+
+#separador1 {
+    display: flex;
+    flex-flow: row wrap;
+    height: 40px;
+}
+
+#botoDisp {
+    width: 160px;
+    height: 38px;
+    flex-direction: row;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    align-content: flex-start;
+    margin: 10px 15px 20px 15px;
+    padding-top: 9px;
+    text-align: right;
+    font-size: x-large;
+    padding-right: 10px;
+    color: black;
+    background-color: white;
+}
+
+#botoInc {
+    background-color: wheat;
+    width: 100px;
+    height: 70px;
+    border: 2px solid black;
+    flex-direction: row;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 10px;
+    padding: 20px 35px;
+    font-size: x-large;
+}
+
+#botoDec {
+    background-color: wheat;
+    width: 100px;
+    height: 70px;
+    border: 2px solid black;
+    flex-direction: row;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-right: 10px;
+    padding: 20px 35px;
+    font-size: x-large;
+}
+
+#botoMes5 {
+    background-color: wheat;
+    width: 217px;
+    height: 40px;
+    border: 2px solid black;
+    /*flex-direction: row;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    align-content: flex-start;*/
+    margin-top: -70px;
+    margin-left: 14px;
+    padding: 6px 95px;
+    font-size: x-large;
+}
+
+#separador2 {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
 }
