@@ -4,7 +4,7 @@ Fet!
 
 ## Exercici Fotos
 
-Ongoing
+Ongoing 15/02/22
 
 ### Exercici Galeria Fotos
 
