@@ -4,11 +4,11 @@ Fet!
 
 ## Exercici Graella de Fotos
 
-Ongoing 15/02/22
+Fet!
 
 ### Exercici Acordió
 
-Pending
+Ongoing 16/02/22
 
 ### Exercici Carrusel
 
