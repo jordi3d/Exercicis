@@ -1,8 +1,8 @@
 import "./Graella.css";
-//import { useState } from "react";
+import { useState } from "react";
 
 export default function Graella() {
-  //const [counter, setCounter] = useState(0);
+  const [zooming, setZooming] = useState(true);
   let fotos = [
     "./img/imatge1.png",
     "./img/imatge2.jpeg",
@@ -12,34 +12,38 @@ export default function Graella() {
     "./img/imatge6.jpeg",
   ];
   function fesclick(index) {
-    let tmp = index.n;
-    let finestra = window.open(tmp, `target = "_blank"`);
-    finestra.onclick(this.close());
+    zooming ? setZooming(false) : setZooming(true);
+    let cadena = "img[src='" + index.n + "']";
+    let tmp = document.querySelector(cadena); /*Tinc tag <img>*/
+    let desti = document.getElementById("zoom");
+    tmp = "url(" + index.n + ")";
+    if (zooming) {
+      desti.style.backgroundImage = tmp;
+      desti.style.visibility = "visible";
+    }
     return true;
+  }
+  function tanca() {
+    setZooming(true);
+    let desti = document.getElementById("zoom");
+    desti.style.backgroundImage = "url(https://via.placeholder.com/640x320)";
+    desti.style.visibility = "hidden";
   }
 
   function imgList(photos) {
-    console.log(photos);
     return (
-      <>
-        {photos.map((n) => (
-          <div className="foto" key={n}>
-            <a href={n} onClick={() => fesclick({ n })}>
-              <img src={n} alt={n} width="120" height="90" />
-            </a>
-          </div>
-        ))}
-      </>
+      <div id="graella">
+        <div id="zoom" onClick={tanca}></div>
+        <div id="fons">
+          {photos.map((n) => (
+            <div className="foto" key={n} onClick={() => fesclick({ n })}>
+              <img src={n} alt={n} width="200" />
+            </div>
+          ))}
+        </div>
+      </div>
     );
   }
 
-  return (
-    <div id="graellaWindow">
-      {imgList(fotos)}
-      {/*<ul>
-        <li>En clicar un foto, mostrar-la en pantalla completa (avançat)</li>
-        <li>En clicar la foto ampliada, mostrar la graella un altre cop</li>
-      </ul>*/}
-    </div>
-  );
+  return <div id="graellaWindow">{imgList(fotos)}</div>;
 }

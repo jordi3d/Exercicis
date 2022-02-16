@@ -1,5 +1,4 @@
 #graellaWindow {
-    background-color: red;
     display: flex;
     align-items: center;
     flex-flow: row wrap;
@@ -8,11 +7,34 @@
 }
 
 .foto {
-    width: 120px;
-    height: 90px;
+    width: 200px;
     flex-direction: row;
     flex-flow: column wrap;
     flex-wrap: wrap;
     flex-grow: 3;
     align-content: flex-start;
+}
+
+#fons {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 20px 10px;
+}
+
+#zoom {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url("https://via.placeholder.com/640x320");
+    background-repeat: no-repeat;
+    z-index: 2;
+    visibility: hidden;
 }
