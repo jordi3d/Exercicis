@@ -4,14 +4,12 @@
     align-items: center;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 0px 10px;
-    row-gap: 0px;
+    gap: 20px 10px;
 }
 
 .foto {
     width: 120px;
     height: 90px;
-    border: 2px solid black;
     flex-direction: row;
     flex-flow: column wrap;
     flex-wrap: wrap;

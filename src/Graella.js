@@ -4,18 +4,18 @@ import "./Graella.css";
 export default function Graella() {
   //const [counter, setCounter] = useState(0);
   let fotos = [
-    "https://placeimg.com/240/120",
-    "https://placeimg.com/240/180",
-    "https://placeimg.com/200/200",
-    "https://placeimg.com/120/120",
-    "https://placeimg.com/400/400",
-    "https://placeimg.com/300/300",
+    "./img/imatge1.png",
+    "./img/imatge2.jpeg",
+    "./img/imatge3.jpeg",
+    "./img/imatge4.jpeg",
+    "./img/imatge5.jpeg",
+    "./img/imatge6.jpeg",
   ];
   function fesclick(index) {
     let tmp = index.n;
     let finestra = window.open(tmp, `target = "_blank"`);
-    if (finestra.onClick()) finestra = window.close();
-    return false;
+    finestra.onclick(this.close());
+    return true;
   }
 
   function imgList(photos) {
@@ -23,9 +23,9 @@ export default function Graella() {
     return (
       <>
         {photos.map((n) => (
-          <div className="foto">
+          <div className="foto" key={n}>
             <a href={n} onClick={() => fesclick({ n })}>
-              <img key={n} src={n} alt={n} width="120" height="90" />
+              <img src={n} alt={n} width="120" height="90" />
             </a>
           </div>
         ))}
