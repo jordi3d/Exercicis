@@ -4,9 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
-import Graella from "./Graella";
-import Comptador from "./Comptador";
-import Acordio from "./Acordio";
+import llista from "./pages/llista";
 
 function App() {
   return (
@@ -15,9 +13,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route index element={<Home />} />
-          <Route path="graella" element={<Graella />} />
-          <Route path="comptador" element={<Comptador />} />
-          <Route path="acordio" element={<Acordio />} />
+          {llista.map((item) => (
+            <Route path={item.path} element={item.element} />
+          ))}
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
