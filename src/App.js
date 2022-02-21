@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import Home from ".pages/Home";
-import Contact from ".pages/Contact";
-import NoPage from ".pages/NoPage";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 import Graella from "./Graella";
 import Comptador from "./Comptador";
 import Acordio from "./Acordio";
