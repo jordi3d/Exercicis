@@ -10,15 +10,15 @@ export default function Comptador() {
     return;
   }
   return (
-    <div id="comptadorWindow">
-      <div id="botoDisp">{counter}</div>
-      <button id="botoInc" onClick={() => incrementa(1)}>
+    <div id="Comptador">
+      <div id="Comptador__Disp">{counter}</div>
+      <button id="Comptador__Inc" onClick={() => incrementa(1)}>
         +1
       </button>
-      <button id="botoDec" onClick={() => incrementa(-1)}>
+      <button id="Comptador__Dec" onClick={() => incrementa(-1)}>
         -1
       </button>
-      <button id="botoMes5" onClick={() => incrementa(5)}>
+      <button id="Comptador__Mes5" onClick={() => incrementa(5)}>
         +5
       </button>
     </div>

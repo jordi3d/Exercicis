@@ -1,40 +1,41 @@
-#graellaWindow {
+#Graella {
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: left;
     gap: 20px 10px;
 }
 
-.foto {
+.Graella__foto {
     width: 200px;
-    flex-direction: row;
+    /*flex-direction: row;
     flex-flow: column wrap;
     flex-wrap: wrap;
-    flex-grow: 3;
-    align-content: flex-start;
+    flex-grow: 1;
+    align-content: flex-start;*/
 }
 
-#fons {
-    position: absolute;
+#Graella__fons {
+    /*position: absolute;
     top: 0px;
-    left: 0px;
-    z-index: 1;
+    left: 0px;*/
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: left;
+    z-index: 1;
     gap: 20px 10px;
 }
 
-#zoom {
+#Graella__zoom {
     position: absolute;
-    height: 100%;
-    width: 100%;
     top: 0px;
     left: 0px;
+    height: 100%;
+    width: 100%;
     background-image: url("https://via.placeholder.com/640x320");
     background-repeat: no-repeat;
+    background-color: white;
     z-index: 2;
     visibility: hidden;
 }

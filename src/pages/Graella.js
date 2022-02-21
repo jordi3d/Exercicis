@@ -15,7 +15,7 @@ export default function Graella() {
     zooming ? setZooming(false) : setZooming(true);
     let cadena = "img[src='" + index.n + "']";
     let tmp = document.querySelector(cadena); /*Tinc tag <img>*/
-    let desti = document.getElementById("zoom");
+    let desti = document.getElementById("Graella__zoom");
     tmp = "url(" + index.n + ")";
     if (zooming) {
       desti.style.backgroundImage = tmp;
@@ -25,18 +25,22 @@ export default function Graella() {
   }
   function tanca() {
     setZooming(true);
-    let desti = document.getElementById("zoom");
+    let desti = document.getElementById("Graella__zoom");
     desti.style.backgroundImage = "url(https://via.placeholder.com/640x320)";
     desti.style.visibility = "hidden";
   }
 
   function imgList(photos) {
     return (
-      <div id="graella">
-        <div id="zoom" onClick={tanca}></div>
-        <div id="fons">
+      <div id="Graella">
+        <div id="Graella__zoom" onClick={tanca}></div>
+        <div id="Graella__fons">
           {photos.map((n) => (
-            <div className="foto" key={n} onClick={() => fesclick({ n })}>
+            <div
+              className="Graella__foto"
+              key={n}
+              onClick={() => fesclick({ n })}
+            >
               <img src={n} alt={n} width="200" />
             </div>
           ))}
@@ -45,5 +49,5 @@ export default function Graella() {
     );
   }
 
-  return <div id="graellaWindow">{imgList(fotos)}</div>;
+  return <>{imgList(fotos)}</>;
 }

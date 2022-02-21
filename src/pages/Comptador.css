@@ -1,4 +1,4 @@
-#comptadorWindow {
+#Comptador {
     width: 250px;
     height: 300px;
     border: 1px solid black;
@@ -11,7 +11,7 @@
     margin: 40px;
 }
 
-#botoDisp {
+#Comptador__Disp {
     width: 160px;
     height: 38px;
     flex-direction: row;
@@ -28,7 +28,7 @@
     background-color: white;
 }
 
-#botoInc {
+#Comptador__Inc {
     background-color: wheat;
     width: 100px;
     height: 70px;
@@ -42,7 +42,7 @@
     font-size: x-large;
 }
 
-#botoDec {
+#Comptador__Dec {
     background-color: wheat;
     width: 100px;
     height: 70px;
@@ -56,7 +56,7 @@
     font-size: x-large;
 }
 
-#botoMes5 {
+#Comptador__Mes5 {
     background-color: wheat;
     width: 218px;
     height: 40px;

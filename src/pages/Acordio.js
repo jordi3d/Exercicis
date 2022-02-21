@@ -73,18 +73,18 @@ export default function Acordio() {
     return true;
   }
   return (
-    <div id="acordio">
+    <div id="Acordio">
       <ul>
-        <li className="entrada" onClick={() => fesclick(0)}>
+        <li className="Acordio__entrada" onClick={() => fesclick(0)}>
           {menus[0]}
         </li>
-        <li className="entrada" onClick={() => fesclick(1)}>
+        <li className="Acordio__entrada" onClick={() => fesclick(1)}>
           {desplega0 && menus[1]}
         </li>
-        <li className="entrada" onClick={() => fesclick(2)}>
+        <li className="Acordio__entrada" onClick={() => fesclick(2)}>
           {desplega1 && menus[2]}
         </li>
-        <li className="entrada" onClick={() => fesclick(3)}>
+        <li className="Acordio__entrada" onClick={() => fesclick(3)}>
           {desplega2 && menus[3]}
         </li>
         {/*menus.map((n, index) => (

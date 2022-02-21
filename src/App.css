@@ -1,8 +1,43 @@
-.App {
-    text-align: center;
+body,
+#root {
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.HolyGrail-body {
+    display: flex;
+    flex: 1;
+}
+
+.HolyGrail-content {
+    flex: 1;
+}
+
+.HolyGrail-nav,
+.HolyGrail-ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+}
+
+.HolyGrail-nav {
+    /* put the nav on the left */
+    order: -1;
+}
+
+header,
+footer {
+    background-color: aliceblue;
+    line-height: 5rem;
+    padding: 0 1rem;
+}
+
+main,
+nav,
+aside {
+    padding: 1rem;
+}
+
+footer {
+    line-height: 3rem;
 }

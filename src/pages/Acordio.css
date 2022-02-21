@@ -1,8 +1,8 @@
-#acordio {
+#Acordio {
     background-color: red;
 }
 
-.entrada {
+.Acordio__entrada {
     background-color: blue;
     color: white;
     list-style: none;
@@ -11,8 +11,5 @@
     width: 120px;
     font-size: x-large;
     line-height: 1.5em;
-}
-
-li {
     cursor: pointer;
 }
