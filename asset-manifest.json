@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jordi3d/Exercicis/static/css/main.1f78a4ec.css",
-    "main.js": "/jordi3d/Exercicis/static/js/main.dbfdd298.js",
-    "static/js/787.1031ca89.chunk.js": "/jordi3d/Exercicis/static/js/787.1031ca89.chunk.js",
-    "index.html": "/jordi3d/Exercicis/index.html",
-    "main.1f78a4ec.css.map": "/jordi3d/Exercicis/static/css/main.1f78a4ec.css.map",
-    "main.dbfdd298.js.map": "/jordi3d/Exercicis/static/js/main.dbfdd298.js.map",
-    "787.1031ca89.chunk.js.map": "/jordi3d/Exercicis/static/js/787.1031ca89.chunk.js.map"
+    "main.css": "/Exercicis/static/css/main.1f78a4ec.css",
+    "main.js": "/Exercicis/static/js/main.75af728d.js",
+    "static/js/787.1031ca89.chunk.js": "/Exercicis/static/js/787.1031ca89.chunk.js",
+    "index.html": "/Exercicis/index.html",
+    "main.1f78a4ec.css.map": "/Exercicis/static/css/main.1f78a4ec.css.map",
+    "main.75af728d.js.map": "/Exercicis/static/js/main.75af728d.js.map",
+    "787.1031ca89.chunk.js.map": "/Exercicis/static/js/787.1031ca89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f78a4ec.css",
-    "static/js/main.dbfdd298.js"
+    "static/js/main.75af728d.js"
   ]
 }
