@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jordialonso.com/Exercicis/static/css/main.1f78a4ec.css",
+    "main.js": "/jordialonso.com/Exercicis/static/js/main.c161ebc3.js",
+    "static/js/787.1031ca89.chunk.js": "/jordialonso.com/Exercicis/static/js/787.1031ca89.chunk.js",
+    "index.html": "/jordialonso.com/Exercicis/index.html",
+    "main.1f78a4ec.css.map": "/jordialonso.com/Exercicis/static/css/main.1f78a4ec.css.map",
+    "main.c161ebc3.js.map": "/jordialonso.com/Exercicis/static/js/main.c161ebc3.js.map",
+    "787.1031ca89.chunk.js.map": "/jordialonso.com/Exercicis/static/js/787.1031ca89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f78a4ec.css",
+    "static/js/main.c161ebc3.js"
+  ]
+}
