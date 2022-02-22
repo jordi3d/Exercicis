@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f78a4ec.css",
-    "main.js": "/static/js/main.18c0e017.js",
-    "static/js/787.1031ca89.chunk.js": "/static/js/787.1031ca89.chunk.js",
-    "index.html": "/index.html",
-    "main.1f78a4ec.css.map": "/static/css/main.1f78a4ec.css.map",
-    "main.18c0e017.js.map": "/static/js/main.18c0e017.js.map",
-    "787.1031ca89.chunk.js.map": "/static/js/787.1031ca89.chunk.js.map"
+    "main.css": "/jordi3d/Exercicis/static/css/main.1f78a4ec.css",
+    "main.js": "/jordi3d/Exercicis/static/js/main.dbfdd298.js",
+    "static/js/787.1031ca89.chunk.js": "/jordi3d/Exercicis/static/js/787.1031ca89.chunk.js",
+    "index.html": "/jordi3d/Exercicis/index.html",
+    "main.1f78a4ec.css.map": "/jordi3d/Exercicis/static/css/main.1f78a4ec.css.map",
+    "main.dbfdd298.js.map": "/jordi3d/Exercicis/static/js/main.dbfdd298.js.map",
+    "787.1031ca89.chunk.js.map": "/jordi3d/Exercicis/static/js/787.1031ca89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f78a4ec.css",
-    "static/js/main.18c0e017.js"
+    "static/js/main.dbfdd298.js"
   ]
 }
