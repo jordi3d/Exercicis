@@ -3,6 +3,7 @@ import Graella from "./Graella";
 import Acordio from "./Acordio";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
+import EliminarRepetits from "./EliminarRepetits";
 import Contact from "./Contact";
 
 //import ToggleButton from "./ToggleButton";
@@ -20,6 +21,11 @@ const llista = [
     path: "afegirelement",
     titol: "Afegir un element",
     element: <AfegirElement />,
+  },
+  {
+    path: "eliminarrepetits",
+    titol: "Eliminar repetits",
+    element: <EliminarRepetits />,
   },
   { path: "contact", titol: "Contacte", element: <Contact /> },
 ];

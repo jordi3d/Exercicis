@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function AfegirElement() {
-  let vectorInt = [1, 29, 46, 2, 14, 39, 5];
+export default function EliminarRepetits() {
+  let vectorInt = [1, 29, 2, 2, 14, 39, 1];
   let valor1, posicio1;
   const [posicio, setPosicio] = useState();
   const [valor, setValor] = useState();
@@ -39,31 +39,12 @@ export default function AfegirElement() {
     return vector2;
   }
   return (
-    <div id="afegirelement">
+    <div id="eliminarrepetits">
       VELL Array: {JSON.stringify(vectorInt)}
       <br />
-      ELEMENT Nou:
-      <input
-        placeholder="Entra un número"
-        id="valinput"
-        type="number"
-        onBlur={() => getvalor(1)}
-      ></input>
-      <br />
-      Posició on inserir:
-      <input
-        placeholder={"Número entre 0 i " + vectorInt.length}
-        id="posinput"
-        type="number"
-        onBlur={() => getvalor(2)}
-      ></input>
-      <br />
+      <button>Eliminar Repetits</button>
       NOU Array:
       {JSON.stringify(inserir(vectorInt, valor, posicio))}
-      <br />
-      Valor:{valor}
-      <br />
-      Posició:{posicio}
     </div>
   );
 }
