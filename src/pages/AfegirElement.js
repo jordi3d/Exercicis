@@ -2,26 +2,16 @@ import { useState } from "react";
 
 export default function AfegirElement() {
   let vectorInt = [1, 29, 46, 2, 14, 39, 5];
-  let valor1, posicio1;
   const [posicio, setPosicio] = useState();
   const [valor, setValor] = useState();
 
-  function getvalor(element) {
-    let ident = "";
-    if (element === 1) {
-      ident = "valinput";
-    } else if (element === 2) {
-      ident = "posinput";
-    } else ident = "no funciona";
-    let tmp = document.getElementById(ident);
-    if (tmp) {
-      if (element === 1) {
-        setValor(Number(tmp.value));
-      } else {
-        setPosicio(Number(tmp.value));
-      }
-      return true;
-    } else return true;
+  function canviavalor(ident, valornou) {
+    if (ident === 1)
+      if (valornou === "") setValor();
+      else setValor(Number(valornou));
+    else if (ident === 2)
+      if (valornou === "") setPosicio();
+      else setPosicio(Number(valornou));
   }
   function inserir(vector, val, pos) {
     let arr1 = [];
@@ -29,7 +19,8 @@ export default function AfegirElement() {
     let vector2 = [];
     if (val === undefined || pos === undefined) return vector;
     if (pos > vector.length || pos < 0) {
-      alert("Posició d'array incorrecte!");
+      alert("Posició d'array incorrecte! Valors entre 0 i " + vector.length);
+      setPosicio();
       return vector;
     }
     arr1 = vector.slice(0, pos);
@@ -47,7 +38,8 @@ export default function AfegirElement() {
         placeholder="Entra un número"
         id="valinput"
         type="number"
-        onBlur={() => getvalor(1)}
+        value={valor}
+        onChange={(event) => canviavalor(1, event.target.value)}
       ></input>
       <br />
       Posició on inserir:
@@ -55,7 +47,8 @@ export default function AfegirElement() {
         placeholder={"Número entre 0 i " + vectorInt.length}
         id="posinput"
         type="number"
-        onBlur={() => getvalor(2)}
+        value={posicio}
+        onChange={(event) => canviavalor(2, event.target.value)}
       ></input>
       <br />
       NOU Array:
