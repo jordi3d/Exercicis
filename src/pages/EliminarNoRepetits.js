@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function EliminarRepetits() {
-  let vectorInt = [0, 1, 29, 2, 2, 14, 39, 1];
+export default function EliminarNoRepetits() {
+  let vectorInt = [0, 14, 2, 14, 39, 39, 0];
   const [vector, setVector] = useState(vectorInt);
 
   function eliminar(vectorInput) {
@@ -15,20 +15,19 @@ export default function EliminarRepetits() {
       for (let j = 0; j < l; j++) {
         if (elem === vectorInput[j]) {
           if (i !== j) trobat = true;
-          break;
         }
       }
-      if (!trobat) nou.push(elem);
+      if (trobat) nou.push(elem);
     }
     setVector(nou);
     return;
   }
   return (
-    <div id="eliminarrepetits">
+    <div id="eliminarnorepetits">
       VELL Array: {JSON.stringify(vectorInt)}
       <br />
       <br />
-      <button onClick={() => eliminar(vectorInt)}>Eliminar Repetits</button>
+      <button onClick={() => eliminar(vectorInt)}>Eliminar NO Repetits</button>
       <br />
       <br />
       NOU Array:

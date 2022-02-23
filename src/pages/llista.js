@@ -4,6 +4,7 @@ import Acordio from "./Acordio";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
+import EliminarNoRepetits from "./EliminarNoRepetits";
 import Contact from "./Contact";
 
 //import ToggleButton from "./ToggleButton";
@@ -26,6 +27,11 @@ const llista = [
     path: "eliminarrepetits",
     titol: "Eliminar repetits",
     element: <EliminarRepetits />,
+  },
+  {
+    path: "eliminarnorepetits",
+    titol: "Eliminar NO repetits",
+    element: <EliminarNoRepetits />,
   },
   { path: "contact", titol: "Contacte", element: <Contact /> },
 ];
