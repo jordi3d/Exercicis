@@ -14,7 +14,7 @@ export default function Graella() {
   function fesclick(index) {
     zooming ? setZooming(false) : setZooming(true);
     let cadena = "img[src='" + index.n + "']";
-    let tmp = document.querySelector(cadena); /*Tinc tag <img>*/
+    let tmp = document.querySelector(cadena);
     let desti = document.getElementById("Graella__zoom");
     tmp = "url(" + index.n + ")";
     if (zooming) {
