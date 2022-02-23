@@ -2,6 +2,7 @@ import Comptador from "./Comptador";
 import Graella from "./Graella";
 import Acordio from "./Acordio";
 import VectorSencers from "./VectorSencers";
+import AfegirElement from "./AfegirElement";
 import Contact from "./Contact";
 
 //import ToggleButton from "./ToggleButton";
@@ -14,6 +15,11 @@ const llista = [
     path: "vectorsencers",
     titol: "Vector de sencers",
     element: <VectorSencers />,
+  },
+  {
+    path: "afegirelement",
+    titol: "Afegir un element",
+    element: <AfegirElement />,
   },
   { path: "contact", titol: "Contacte", element: <Contact /> },
 ];
