@@ -1,3 +1,9 @@
 export default function VectorSencers() {
-  return HOLA;
+  return (
+    <div id="VectorSencers">
+      <ul>
+        <li>HOLA</li>
+      </ul>
+    </div>
+  );
 }
