@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function ArrayObjectes() {
   let array = ["u1", "u3"];
 
