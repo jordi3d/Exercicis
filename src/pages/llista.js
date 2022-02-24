@@ -1,6 +1,7 @@
 import Comptador from "./Comptador";
 import Graella from "./Graella";
 import Acordio from "./Acordio";
+import Carrusel from "./Carrusel";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
@@ -16,6 +17,7 @@ const llista = [
   { path: "comptador", titol: "Comptador", element: <Comptador /> },
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
   { path: "acordio", titol: "Menús desplegables", element: <Acordio /> },
+  { path: "carrusel", titol: "Carrusel", element: <Carrusel /> },
   {
     path: "vectorsencers",
     titol: "Vector de sencers",
