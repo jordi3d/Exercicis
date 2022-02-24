@@ -33,3 +33,7 @@ Pending
 ### Exercici Tip Calculator
 
 Pending
+
+### 8 Exercicis amb arrays
+
+Fets!
