@@ -1,36 +1,36 @@
-# Exercici Comptador
+### Exercici Comptador
 
 Fet!
 
-## Exercici Graella de Fotos
+### Exercici Graella de Fotos
 
 Fet!
 
-### Exercici Acordió
+## Exercici Acordió
 
 Ongoing 16/02/22
 
-### Exercici Carrusel
+# Exercici Carrusel
 
 Pending
 
-### Exercici 3 en ratlla
+# Exercici 3 en ratlla
 
 Pending
 
-### Exercici Rellotge Digital
+# Exercici Rellotge Digital
 
 Pending
 
-### Exercici Rellotge Analògic
+# Exercici Rellotge Analògic
 
 Pending
 
-### Exercici Sumador de números
+# Exercici Sumador de números
 
 Pending
 
-### Exercici Tip Calculator
+# Exercici Tip Calculator
 
 Pending
 
