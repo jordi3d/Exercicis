@@ -4,13 +4,13 @@ import { useState } from "react";
 export default function Graella() {
   const [zooming, setZooming] = useState(true);
   let fotos = [
-    "./img/imatge1.png",
-    "./img/imatge2.jpeg",
-    "./img/imatge3.jpeg",
-    "./img/imatge4.jpeg",
-    "./img/imatge5.jpeg",
-    "./img/imatge6.jpeg",
-  ];
+    "/img/imatge1.png",
+    "/img/imatge2.jpeg",
+    "/img/imatge3.jpeg",
+    "/img/imatge4.jpeg",
+    "/img/imatge5.jpeg",
+    "/img/imatge6.jpeg",
+  ].map((f) => process.env.PUBLIC_URL + f);
   function fesclick(index) {
     zooming ? setZooming(false) : setZooming(true);
     let cadena = "img[src='" + index.n + "']";
