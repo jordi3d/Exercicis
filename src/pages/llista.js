@@ -5,6 +5,9 @@ import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
 import EliminarNoRepetits from "./EliminarNoRepetits";
+import Concatenar from "./Concatenar";
+import ConcatenarBis from "./ConcatenarBis";
+import ArrayObjectes from "./ArrayObjectes";
 import Contact from "./Contact";
 
 //import ToggleButton from "./ToggleButton";
@@ -32,6 +35,21 @@ const llista = [
     path: "eliminarnorepetits",
     titol: "Eliminar NO repetits",
     element: <EliminarNoRepetits />,
+  },
+  {
+    path: "concatenar",
+    titol: "Concatenar 2 arrays",
+    element: <Concatenar />,
+  },
+  {
+    path: "concatenarbis",
+    titol: "Concatenar 2 arrays bis",
+    element: <ConcatenarBis />,
+  },
+  {
+    path: "arrayobjectes",
+    titol: "Array d'objectes",
+    element: <ArrayObjectes />,
   },
   { path: "contact", titol: "Contacte", element: <Contact /> },
 ];

@@ -5,6 +5,11 @@ body,
     flex-direction: column;
 }
 
+li {
+    list-style: none;
+    width: 180px;
+}
+
 .HolyGrail-body {
     display: flex;
     flex: 1;

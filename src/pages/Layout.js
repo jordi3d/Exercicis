@@ -15,7 +15,7 @@ export default function Layout() {
               <Link to="/">Home</Link>
             </li>
             {llista.map((item) => (
-              <li key={item}>
+              <li>
                 <Link to={item.path}>{item.titol}</Link>
               </li>
             ))}
