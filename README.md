@@ -12,7 +12,7 @@ Ongoing 16/02/22
 
 # Exercici Carrusel
 
-Pending
+Ongoing 24/02/22
 
 # Exercici 3 en ratlla
 
