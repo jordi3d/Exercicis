@@ -6,8 +6,8 @@ export default function ToggleableSideBar() {
 
   return (
     <div id="toggleablesidebar">
-      <button onClick={() => setClicked(!clicked)}>
-        <svg viewBox="0 0 12 8" width="80" height="15">
+      <div id="boto" onClick={() => setClicked(!clicked)}>
+        <svg viewBox="9 0 10 8" width="115" height="8">
           <path
             d="M1 1h8M1 4h 8M1 7h8"
             stroke="#000"
@@ -15,7 +15,7 @@ export default function ToggleableSideBar() {
             stroke-linecap="round"
           />
         </svg>
-      </button>
+      </div>
       <div
         id="sidebar"
         style={{

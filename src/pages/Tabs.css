@@ -1,3 +1,47 @@
-#tabs {
-    text-align: center;
+#botonetsTab {
+    display: flex;
+    margin-top: -15px;
+    gap: 0px;
+    cursor: pointer;
+    align-items: center;
+    height: 30px;
+}
+
+.clicatTabA {
+    background-color: red;
+    padding-right: 30px;
+    padding-left: 5px;
+    color: white;
+    border-top-right-radius: 12px;
+    border: 1px solid black;
+}
+
+.clicatTabB {
+    background-color: green;
+    padding-right: 30px;
+    padding-left: 5px;
+    color: white;
+    border-top-right-radius: 12px;
+    border: 1px solid black;
+}
+
+.noclicatTab {
+    padding-right: 30px;
+    padding-left: 5px;
+    color: black;
+    border-top-right-radius: 12px;
+    border: 1px solid black;
+}
+
+#text_outputTabs {
+    position: absolute;
+    left: 268px;
+    top: 106px;
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    color: white;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
 }

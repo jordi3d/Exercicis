@@ -28,11 +28,11 @@ Fet! amb una variació... faig animació pel desplegament/replegament
 
 # Exercici Tabs
 
-Ongoing 25/2/22
+Fet!
 
 # Exercici 3 en ratlla
 
-Pending
+Ongoing 26/2/22
 
 # Exercici Rellotge Digital
 

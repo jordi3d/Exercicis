@@ -7,10 +7,16 @@
     background-color: green;
 }
 
+#boto {
+    background-color: lightgray;
+    width: 100px;
+    height: 25px;
+}
+
 #sidebar {
     z-index: 3;
     position: absolute;
-    top: 24px;
+    top: 25px;
     left: 0px;
     bottom: 0px;
     background-color: red;
