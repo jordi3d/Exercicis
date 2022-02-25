@@ -1,13 +1,13 @@
 #carrusel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
+    width: 640px;
+    height: 480px;
+    background-image: url("../../public/img/imatge1.png");
+    background-size: 640px;
 }
 
 #anterior,
 #seguent {
+    position: relative;
     width: 30px;
     height: 60px;
     text-align: center;
@@ -17,6 +17,17 @@
     opacity: 0.5;
     background-color: black;
     display: none;
+    cursor: pointer;
+}
+
+#anterior {
+    left: 0px;
+    top: 180px;
+}
+
+#seguent {
+    left: 610px;
+    top: 105px;
 }
 
 #foto {
@@ -32,9 +43,13 @@
 }
 
 #navegador {
+    position: relative;
+    top: 299px;
+    left: 259px;
     width: 120px;
     height: 20px;
     background-color: green;
     display: block;
     text-align: center;
+    cursor: pointer;
 }
