@@ -13,14 +13,6 @@ let fotos = [
 export default function Carrusel() {
   const [imatge, setImatge] = useState(0);
   const [amaga, setMostra] = useState("amaga");
-  let puntets = [
-    ["puntas", "punt", "punt", "punt", "punt", "punt"],
-    ["punt", "puntas", "punt", "punt", "punt", "punt"],
-    ["punt", "punt", "puntas", "punt", "punt", "punt"],
-    ["punt", "punt", "punt", "puntas", "punt", "punt"],
-    ["punt", "punt", "punt", "punt", "puntas", "punt"],
-    ["punt", "punt", "punt", "punt", "punt", "puntas"],
-  ];
   return (
     <div
       id="carrusel"
@@ -51,7 +43,7 @@ export default function Carrusel() {
         {fotos.map((n, index) => (
           <div
             key={n}
-            className={puntets[imatge][index]}
+            className={index === imatge ? "puntas" : "punt"}
             onClick={() =>
               imatge !== index ? setImatge(index) : setImatge(imatge)
             }
