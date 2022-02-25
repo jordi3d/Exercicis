@@ -10,9 +10,17 @@ Fet!
 
 Ongoing 16/02/22
 
-# Exercici Carrusel
+### Exercici Carrusel
 
-Ongoing 24/02/22
+Acabat 24/02/22
+
+### Exercici Toggle Button
+
+Acabat 25/02/22
+
+### Exercici Group Button
+
+Acabat 25/02/22
 
 # Exercici 3 en ratlla
 

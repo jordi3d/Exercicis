@@ -1,0 +1,15 @@
+#togglebutton {
+    text-align: center;
+    align-items: center;
+}
+
+.clicat {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.noclicat {
+    color: black;
+    padding: 10px;
+}
