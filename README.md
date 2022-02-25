@@ -12,15 +12,23 @@ Ongoing 16/02/22
 
 ### Exercici Carrusel
 
-Acabat 24/02/22
+Fet!
 
 ### Exercici Toggle Button
 
-Acabat 25/02/22
+Fet!
 
 ### Exercici Group Button
 
-Acabat 25/02/22
+Fet!
+
+# Exercici Toggleable Side Bar
+
+Pending
+
+# Exercici Tabs
+
+Pending
 
 # Exercici 3 en ratlla
 

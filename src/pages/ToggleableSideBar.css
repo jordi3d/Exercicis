@@ -1,0 +1,47 @@
+#toggleablesidebar {
+    position: absolute;
+    top: 80px;
+    z-index: 0;
+    height: 82%;
+    width: 50%;
+    background-color: green;
+}
+
+#sidebar {
+    z-index: 3;
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    bottom: 0px;
+    background-color: red;
+}
+
+
+/*
+.desplegat {
+    /*display: block;* /
+    animation-name: slideout;
+}
+
+.tancat {
+    /*display: none;* /
+    animation-name: slidein;
+}*/
+
+@keyframes slideout {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        width: 150px;
+    }
+    to {
+        width: 0px;
+    }
+}

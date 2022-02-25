@@ -4,6 +4,7 @@ import Acordio from "./Acordio";
 import Carrusel from "./Carrusel";
 import ToggleButton from "./ToggleButton";
 import GroupButton from "./GroupButton";
+import ToggleableSideBar from "./ToggleableSideBar";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
@@ -20,6 +21,11 @@ const llista = [
   { path: "carrusel", titol: "Carrusel", element: <Carrusel /> },
   { path: "togglebutton", titol: "Toggle Button", element: <ToggleButton /> },
   { path: "groupbutton", titol: "Group Button", element: <GroupButton /> },
+  {
+    path: "toggleablesidebar",
+    titol: "Toggleable Sidebar",
+    element: <ToggleableSideBar />,
+  },
   {
     path: "vectorsencers",
     titol: "Vector de sencers",
