@@ -22,13 +22,13 @@ Fet!
 
 Fet!
 
-# Exercici Toggleable Side Bar
+### Exercici Toggleable Side Bar
 
-Pending
+Fet! amb una variació... faig animació pel desplegament/replegament
 
 # Exercici Tabs
 
-Pending
+Ongoing 25/2/22
 
 # Exercici 3 en ratlla
 

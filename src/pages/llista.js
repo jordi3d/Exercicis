@@ -5,6 +5,7 @@ import Carrusel from "./Carrusel";
 import ToggleButton from "./ToggleButton";
 import GroupButton from "./GroupButton";
 import ToggleableSideBar from "./ToggleableSideBar";
+import Tabs from "./Tabs";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
@@ -25,6 +26,11 @@ const llista = [
     path: "toggleablesidebar",
     titol: "Toggleable Sidebar",
     element: <ToggleableSideBar />,
+  },
+  {
+    path: "tabs",
+    titol: "Tabs",
+    element: <Tabs />,
   },
   {
     path: "vectorsencers",
