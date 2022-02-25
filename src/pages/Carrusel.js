@@ -21,16 +21,6 @@ export default function Carrusel() {
     ["punt", "punt", "punt", "punt", "puntas", "punt"],
     ["punt", "punt", "punt", "punt", "punt", "puntas"],
   ];
-
-  function fwd() {
-    imatge < fotos.length - 1 ? setImatge(imatge + 1) : setImatge(0);
-  }
-  function rew() {
-    imatge ? setImatge(imatge - 1) : setImatge(fotos.length - 1);
-  }
-  function vesa(quina, destaca) {
-    if (imatge !== quina) setImatge(quina);
-  }
   return (
     <div
       id="carrusel"
@@ -38,10 +28,22 @@ export default function Carrusel() {
       onMouseOut={() => setMostra("amaga")}
       style={{ backgroundImage: "url('" + fotos[imatge] + "')" }}
     >
-      <div id="anterior" className={amaga} onClick={() => rew()}>
+      <div
+        id="anterior"
+        className={amaga}
+        onClick={() =>
+          imatge ? setImatge(imatge - 1) : setImatge(fotos.length - 1)
+        }
+      >
         &lt;
       </div>
-      <div id="seguent" className={amaga} onClick={() => fwd()}>
+      <div
+        id="seguent"
+        className={amaga}
+        onClick={() =>
+          imatge < fotos.length - 1 ? setImatge(imatge + 1) : setImatge(0)
+        }
+      >
         &gt;
       </div>
       <div id="separador"></div>
@@ -50,7 +52,9 @@ export default function Carrusel() {
           <div
             key={n}
             className={puntets[imatge][index]}
-            onClick={() => vesa(index, n)}
+            onClick={() =>
+              imatge !== index ? setImatge(index) : setImatge(imatge)
+            }
           ></div>
         ))}
       </div>
