@@ -14,7 +14,7 @@
     color: white;
     font-size: xx-large;
     padding-top: 15px;
-    opacity: 0.5;
+    opacity: 0.7;
     background-color: black;
     display: none;
     cursor: pointer;
@@ -42,11 +42,17 @@
     display: block;
 }
 
+.punts {
+    display: inline-block;
+    font-size: xx-large;
+    margin-top: -12px;
+}
+
 #navegador {
     position: relative;
     top: 299px;
-    left: 259px;
-    width: 120px;
+    left: 220px;
+    width: 200px;
     height: 20px;
     background-color: green;
     display: block;

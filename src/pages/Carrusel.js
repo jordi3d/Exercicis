@@ -26,8 +26,10 @@ export default function Carrusel() {
     console.log("CLICK REW: %d", imatge);
     let tmp1 = document.getElementById("carrusel");
     if (imatge > 0) {
-      setImatge((n) => n - 1);
+      setImatge((imatge) => imatge - 1);
     } else setImatge(fotos.length - 1);
+    console.log("REW %d", imatge);
+    tmp1.style.backgroundImage = 'url("' + fotos[imatge] + '")';
     tmp1.style.backgroundImage = 'url("' + fotos[imatge] + '")';
   }
   function amagamenus() {
@@ -42,15 +44,23 @@ export default function Carrusel() {
     let tmp1 = document.getElementById("anterior");
     let tmp2 = document.getElementById("seguent");
     let tmp3 = document.getElementById("navegador");
+    //let tmp4 = document.getElementById("carrusel");
     tmp1.style.display = "block";
     tmp2.style.display = "block";
     tmp3.style.display = "block";
+    //tmp4.style.backgroundImage = 'url("' + fotos[imatge] + '")';
+  }
+  function vesa(quina) {
+    setImatge(quina);
+    let tmp1 = document.getElementById("carrusel");
+    tmp1.style.backgroundImage = 'url("' + fotos[imatge] + '")';
   }
   return (
     <div
       id="carrusel"
       onMouseOver={() => mostramenus()}
       onMouseOut={() => amagamenus()}
+      on
     >
       <div id="anterior" onClick={() => rew()}>
         &lt;
@@ -59,7 +69,14 @@ export default function Carrusel() {
         &gt;
       </div>
       <div id="separador"></div>
-      <div id="navegador">· · o · · {imatge}</div>
+      <div id="navegador">
+        {fotos.map((n, index) => (
+          <div key={n} className="punts" onClick={() => vesa(index)}>
+            &nbsp;·&nbsp;
+          </div>
+        ))}
+        {imatge}
+      </div>
     </div>
   );
 }
