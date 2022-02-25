@@ -1,8 +1,16 @@
 #carrusel {
     width: 640px;
     height: 480px;
-    background-image: url("../../public/img/imatge1.png");
+    /*background-image: url("../../public/img/imatge1.png");*/
     background-size: 640px;
+}
+
+.mostra {
+    display: block;
+}
+
+.amaga {
+    display: none;
 }
 
 #anterior,
@@ -14,9 +22,9 @@
     color: white;
     font-size: xx-large;
     padding-top: 15px;
-    opacity: 0.7;
+    opacity: 0.5;
     background-color: black;
-    display: none;
+    /*display: none;*/
     cursor: pointer;
 }
 
@@ -42,10 +50,25 @@
     display: block;
 }
 
-.punts {
+.punt {
     display: inline-block;
-    font-size: xx-large;
-    margin-top: -12px;
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    border-width: 10px;
+}
+
+.puntas {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 #navegador {
@@ -54,8 +77,8 @@
     left: 220px;
     width: 200px;
     height: 20px;
-    background-color: green;
-    display: block;
+    opacity: 0.5;
+    background-color: black;
     text-align: center;
     cursor: pointer;
 }

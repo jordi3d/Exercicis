@@ -12,70 +12,47 @@ let fotos = [
 
 export default function Carrusel() {
   const [imatge, setImatge] = useState(0);
+  const [amaga, setMostra] = useState("amaga");
+  let puntets = [
+    ["puntas", "punt", "punt", "punt", "punt", "punt"],
+    ["punt", "puntas", "punt", "punt", "punt", "punt"],
+    ["punt", "punt", "puntas", "punt", "punt", "punt"],
+    ["punt", "punt", "punt", "puntas", "punt", "punt"],
+    ["punt", "punt", "punt", "punt", "puntas", "punt"],
+    ["punt", "punt", "punt", "punt", "punt", "puntas"],
+  ];
 
   function fwd() {
-    console.log("CLICK FWD: %d", imatge);
-    let tmp1 = document.getElementById("carrusel");
-    if (imatge < fotos.length - 1) {
-      setImatge((n) => n + 1);
-    } else setImatge(0);
-    console.log("FWD %d", imatge);
-    tmp1.style.backgroundImage = 'url("' + fotos[imatge] + '")';
+    imatge < fotos.length - 1 ? setImatge(imatge + 1) : setImatge(0);
   }
   function rew() {
-    console.log("CLICK REW: %d", imatge);
-    let tmp1 = document.getElementById("carrusel");
-    if (imatge > 0) {
-      setImatge((imatge) => imatge - 1);
-    } else setImatge(fotos.length - 1);
-    console.log("REW %d", imatge);
-    tmp1.style.backgroundImage = 'url("' + fotos[imatge] + '")';
-    tmp1.style.backgroundImage = 'url("' + fotos[imatge] + '")';
+    imatge ? setImatge(imatge - 1) : setImatge(fotos.length - 1);
   }
-  function amagamenus() {
-    let tmp1 = document.getElementById("anterior");
-    let tmp2 = document.getElementById("seguent");
-    let tmp3 = document.getElementById("navegador");
-    tmp1.style.display = "none";
-    tmp2.style.display = "none";
-    tmp3.style.display = "none";
-  }
-  function mostramenus() {
-    let tmp1 = document.getElementById("anterior");
-    let tmp2 = document.getElementById("seguent");
-    let tmp3 = document.getElementById("navegador");
-    //let tmp4 = document.getElementById("carrusel");
-    tmp1.style.display = "block";
-    tmp2.style.display = "block";
-    tmp3.style.display = "block";
-    //tmp4.style.backgroundImage = 'url("' + fotos[imatge] + '")';
-  }
-  function vesa(quina) {
-    setImatge(quina);
-    let tmp1 = document.getElementById("carrusel");
-    tmp1.style.backgroundImage = 'url("' + fotos[imatge] + '")';
+  function vesa(quina, destaca) {
+    if (imatge !== quina) setImatge(quina);
   }
   return (
     <div
       id="carrusel"
-      onMouseOver={() => mostramenus()}
-      onMouseOut={() => amagamenus()}
-      on
+      onMouseOver={() => setMostra("mostra")}
+      onMouseOut={() => setMostra("amaga")}
+      style={{ backgroundImage: "url('" + fotos[imatge] + "')" }}
     >
-      <div id="anterior" onClick={() => rew()}>
+      <div id="anterior" className={amaga} onClick={() => rew()}>
         &lt;
       </div>
-      <div id="seguent" onClick={() => fwd()}>
+      <div id="seguent" className={amaga} onClick={() => fwd()}>
         &gt;
       </div>
       <div id="separador"></div>
-      <div id="navegador">
+      <div id="navegador" className={amaga}>
         {fotos.map((n, index) => (
-          <div key={n} className="punts" onClick={() => vesa(index)}>
-            &nbsp;·&nbsp;
-          </div>
+          <div
+            key={n}
+            className={puntets[imatge][index]}
+            onClick={() => vesa(index, n)}
+          ></div>
         ))}
-        {imatge}
       </div>
     </div>
   );
