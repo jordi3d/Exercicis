@@ -7,6 +7,7 @@ import GroupButton from "./GroupButton";
 import ToggleableSideBar from "./ToggleableSideBar";
 import Tabs from "./Tabs";
 import TicTacToe from "./TicTacToe";
+import RellotgeDigital from "./RellotgeDigital";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
@@ -30,6 +31,11 @@ const llista = [
   },
   { path: "tabs", titol: "Tabs", element: <Tabs /> },
   { path: "tictactoe", titol: "Tres en Ratlla*", element: <TicTacToe /> },
+  {
+    path: "rellotgedigital",
+    titol: "Rellotge Digital*",
+    element: <RellotgeDigital />,
+  },
   {
     path: "vectorsencers",
     titol: "Vector de sencers",

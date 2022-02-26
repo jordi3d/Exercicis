@@ -14,7 +14,7 @@ export default function TicTacToe() {
     { 7: "\xa0" },
     { 8: "\xa0" },
   ]);
-  let joc = [
+  const tauler_buit = [
     { 0: "\xa0" },
     { 1: "\xa0" },
     { 2: "\xa0" },
@@ -25,23 +25,121 @@ export default function TicTacToe() {
     { 7: "\xa0" },
     { 8: "\xa0" },
   ];
-  function fae(tauler) {
-    for (let i = 0; i < 3; i++) console.log(tauler[i][i]);
+
+  function reset() {
+    setPartida(tauler_buit);
+    setPropera("X");
+    let tmp = document.getElementsByClassName("guanya");
+    console.log("guanya: ", tmp, tmp.length);
+    if (tmp.length) {
+      for (let i = 0; i < tmp.length; i++) tmp[i].className = "casella";
+    }
+    let tmp2 = document.getElementsByClassName("guanyes");
+    console.log("guanyes: ", tmp2, tmp2.length);
+    if (tmp2.length) {
+      for (let j = 0; j < tmp2.length; j++) tmp2[j].className = "casella";
+    }
+  }
+
+  function fae(tauler, seg) {
+    let res = 0;
+    let Os = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
+    let Xs = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
+    for (let i = 0; i < 9; i++) {
+      switch (tauler[i][i]) {
+        case "O":
+          Os[i] = i;
+          break;
+        case "X":
+          Xs[i] = i;
+          break;
+        default:
+          res++;
+      }
+    }
+    let tmp = document.getElementsByClassName("casella");
+    if (res <= 4) {
+      if (Os[0] === 0 && Os[1] === 1 && Os[2] === 2) {
+        tmp[0].classList += " guanya";
+        tmp[1].classList += " guanya";
+        tmp[2].classList += " guanya";
+      } else if (Os[3] === 3 && Os[4] === 4 && Os[5] === 5) {
+        tmp[3].classList += " guanya";
+        tmp[4].classList += " guanya";
+        tmp[5].classList += " guanya";
+      } else if (Os[6] === 6 && Os[7] === 7 && Os[8] === 8) {
+        tmp[6].classList += " guanya";
+        tmp[7].classList += " guanya";
+        tmp[8].classList += " guanya";
+      } else if (Os[0] === 0 && Os[3] === 3 && Os[6] === 6) {
+        tmp[0].classList += " guanya";
+        tmp[3].classList += " guanya";
+        tmp[6].classList += " guanya";
+      } else if (Os[1] === 1 && Os[4] === 4 && Os[7] === 7) {
+        tmp[1].classList += " guanya";
+        tmp[4].classList += " guanya";
+        tmp[7].classList += " guanya";
+      } else if (Os[2] === 2 && Os[5] === 5 && Os[8] === 8) {
+        tmp[2].classList += " guanya";
+        tmp[5].classList += " guanya";
+        tmp[8].classList += " guanya";
+      } else if (Os[0] === 0 && Os[4] === 4 && Os[8] === 8) {
+        tmp[0].classList += " guanya";
+        tmp[4].classList += " guanya";
+        tmp[8].classList += " guanya";
+      } else if (Os[2] === 2 && Os[4] === 4 && Os[6] === 6) {
+        tmp[2].classList += " guanya";
+        tmp[4].classList += " guanya";
+        tmp[6].classList += " guanya";
+      } else if (Xs[0] === 0 && Xs[1] === 1 && Xs[2] === 2) {
+        tmp[0].classList += " guanyes";
+        tmp[1].classList += " guanyes";
+        tmp[2].classList += " guanyes";
+      } else if (Xs[3] === 3 && Xs[4] === 4 && Xs[5] === 5) {
+        tmp[3].classList += " guanyes";
+        tmp[4].classList += " guanyes";
+        tmp[5].classList += " guanyes";
+      } else if (Xs[6] === 6 && Xs[7] === 7 && Xs[8] === 8) {
+        tmp[6].classList += " guanyes";
+        tmp[7].classList += " guanyes";
+        tmp[8].classList += " guanyes";
+      } else if (Xs[0] === 0 && Xs[3] === 3 && Xs[6] === 6) {
+        tmp[0].classList += " guanyes";
+        tmp[3].classList += " guanyes";
+        tmp[6].classList += " guanyes";
+      } else if (Xs[1] === 1 && Xs[4] === 4 && Xs[7] === 7) {
+        tmp[1].classList += " guanyes";
+        tmp[4].classList += " guanyes";
+        tmp[7].classList += " guanyes";
+      } else if (Xs[2] === 2 && Xs[5] === 5 && Xs[8] === 8) {
+        tmp[2].classList += " guanyes";
+        tmp[5].classList += " guanyes";
+        tmp[8].classList += " guanyes";
+      } else if (Xs[0] === 0 && Xs[4] === 4 && Xs[8] === 8) {
+        tmp[0].classList += " guanyes";
+        tmp[4].classList += " guanyes";
+        tmp[8].classList += " guanyes";
+      } else if (Xs[2] === 2 && Xs[4] === 4 && Xs[6] === 6) {
+        tmp[2].classList += " guanyes";
+        tmp[4].classList += " guanyes";
+        tmp[6].classList += " guanyes";
+      } else if (res === 0)
+        alert("S'ha acabat el joc!\x0dPrem RESET per jugar de nou");
+    }
   }
   function clicadacasella(posicio, tauler) {
     if (partida[posicio][posicio] === "\xa0") {
       propera === "O" ? setPropera("X") : setPropera("O");
       tauler[posicio][posicio] = propera;
-      console.log("tauler: ", JSON.stringify(tauler));
       setPartida(tauler);
-      fae(partida);
-    } else alert("clica una casella buida");
+      fae(partida, posicio);
+    } else alert("clica en una casella buida");
   }
   return (
     <div id="tictactoe">
       <h1>3 en ratlla</h1>
-      <div id="separador"></div>
-      {joc.map((n, index) => (
+      <div className="separador"></div>
+      {partida.map((n, index) => (
         <div
           key={index}
           className="casella"
@@ -50,37 +148,12 @@ export default function TicTacToe() {
           {partida[index][index]}
         </div>
       ))}
-      {/*<div className="casella" onClick={() => clicadacasella(0, partida)}>
-        {partida[0][0]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(1, partida)}>
-        {partida[1][1]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(2, partida)}>
-        {partida[2][2]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(3, partida)}>
-        {partida[3][3]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(4, partida)}>
-        {partida[4][4]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(5, partida)}>
-        {partida[5][5]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(6, partida)}>
-        {partida[6][6]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(7, partida)}>
-        {partida[7][7]}
-      </div>
-      <div className="casella" onClick={() => clicadacasella(8, partida)}>
-        {partida[8][8]}
-    </div>*/}
       <br />
       Propera jugada: {propera}
       <br />
-      Partida: {JSON.stringify(partida)}
+      <br />
+      <div className="separador"></div>
+      <button onClick={() => reset()}>RESET</button>
     </div>
   );
 }
