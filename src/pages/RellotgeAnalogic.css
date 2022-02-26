@@ -1,15 +1,15 @@
-#rellotgedigital {
+#rellotgeanalogic {
     text-align: center;
 }
 
-.pastilleta {
+.pastilleta2 {
     height: 60px;
 }
 
-.mostra_clock {
+.mostra_watch {
     display: block;
 }
 
-.amaga_clock {
+.amaga_watch {
     display: none;
 }

@@ -8,6 +8,7 @@ import ToggleableSideBar from "./ToggleableSideBar";
 import Tabs from "./Tabs";
 import TicTacToe from "./TicTacToe";
 import RellotgeDigital from "./RellotgeDigital";
+import RellotgeAnalogic from "./RellotgeAnalogic";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
@@ -35,6 +36,11 @@ const llista = [
     path: "rellotgedigital",
     titol: "Rellotge Digital*",
     element: <RellotgeDigital />,
+  },
+  {
+    path: "rellotgeanalogic",
+    titol: "Rellotge Analògic*",
+    element: <RellotgeAnalogic />,
   },
   {
     path: "vectorsencers",

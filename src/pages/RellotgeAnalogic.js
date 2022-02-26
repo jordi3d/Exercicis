@@ -1,7 +1,7 @@
-import "./RellotgeDigital.css";
+import "./RellotgeAnalogic.css";
 import { useState } from "react";
 
-export default function RellotgeDigital() {
+export default function RellotgeAnalogic() {
   const [clicked, setClicked] = useState(true);
 
   function dia_i_hora() {
@@ -37,7 +37,7 @@ export default function RellotgeDigital() {
     let min = ("0" + d.getMinutes()).slice(-2);
     let sec = ("0" + d.getSeconds()).slice(-2);
     return (
-      <div className={clicked ? "mostra_clock" : "amaga_clock"}>
+      <div className={clicked ? "mostra_watch" : "amaga_watch"}>
         {days[nomdia] + ", " + dia}
         {mes === 4 || mes === 8 || mes === 10 ? " d'" : " de "}
         {months[mes] + " de " + any} <br />
@@ -47,12 +47,12 @@ export default function RellotgeDigital() {
   }
 
   return (
-    <div id="rellotgedigital">
-      <h1>RELLOTGE DIGITAL</h1>
+    <div id="rellotgeanalogic">
+      <h1>RELLOTGE ANALÒGIC</h1>
       <br />
       <br />
       <br />
-      <div className="pastilleta">
+      <div className="pastilleta2">
         {dia_i_hora() && setInterval(() => clicked, 1000)}
       </div>
       <br />

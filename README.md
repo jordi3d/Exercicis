@@ -30,17 +30,17 @@ Fet! amb una variació... faig animació pel desplegament/replegament
 
 Fet!
 
-# Exercici 3 en ratlla
+## Exercici 3 en ratlla
 
 Ongoing 26/2/22
 
-# Exercici Rellotge Digital
+## Exercici Rellotge Digital
 
-Pending
+Ongoing 26/2/22
 
-# Exercici Rellotge Analògic
+## Exercici Rellotge Analògic
 
-Pending
+Ongoing 26/2/22
 
 # Exercici Sumador de números
 
