@@ -44,7 +44,7 @@ const llista = [
     titol: "Rellotge Analògic*",
     element: <RellotgeAnalogic />,
   },
-  { path: "sumador", titol: "Sumador*", element: <Sumador /> },
+  { path: "sumador", titol: "Sumador", element: <Sumador /> },
   {
     path: "tipcalculator",
     titol: "Tip Calculator*",
