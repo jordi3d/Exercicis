@@ -46,9 +46,9 @@ Ongoing 26/2/22
 
 Fet!
 
-# Exercici Tip Calculator
+### Exercici Tip Calculator
 
-Ongoing 26/2/22
+Fet!
 
 ### 8 Exercicis amb arrays
 

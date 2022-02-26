@@ -47,7 +47,7 @@ const llista = [
   { path: "sumador", titol: "Sumador", element: <Sumador /> },
   {
     path: "tipcalculator",
-    titol: "Tip Calculator*",
+    titol: "Tip Calculator",
     element: <TipCalculator />,
   },
   {

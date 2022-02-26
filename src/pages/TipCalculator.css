@@ -1,3 +1,24 @@
-#tipcalculator {
-    text-align: center;
+#preu {
+    margin-left: 48px;
+    text-align: right;
+}
+
+#totalfactura {
+    margin-left: 140px;
+    text-align: right;
+}
+
+#propina {
+    margin-left: 130px;
+    width: 30px;
+}
+
+#arrodoniment {
+    margin-left: 10px;
+}
+
+#comensals[type="number"] {
+    margin-left: 95px;
+    width: 40px;
+    text-align: right;
 }
