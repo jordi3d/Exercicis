@@ -26,7 +26,7 @@ Fet!
 
 Fet! amb una variació... faig animació pel desplegament/replegament
 
-# Exercici Tabs
+### Exercici Tabs
 
 Fet!
 
@@ -42,13 +42,13 @@ Ongoing 26/2/22
 
 Ongoing 26/2/22
 
-# Exercici Sumador de números
+### Exercici Sumador de números
 
-Pending
+Fet!
 
 # Exercici Tip Calculator
 
-Pending
+Ongoing 26/2/22
 
 ### 8 Exercicis amb arrays
 

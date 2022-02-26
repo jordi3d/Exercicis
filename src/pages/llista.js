@@ -9,6 +9,8 @@ import Tabs from "./Tabs";
 import TicTacToe from "./TicTacToe";
 import RellotgeDigital from "./RellotgeDigital";
 import RellotgeAnalogic from "./RellotgeAnalogic";
+import Sumador from "./Sumador";
+import TipCalculator from "./TipCalculator";
 import VectorSencers from "./VectorSencers";
 import AfegirElement from "./AfegirElement";
 import EliminarRepetits from "./EliminarRepetits";
@@ -41,6 +43,12 @@ const llista = [
     path: "rellotgeanalogic",
     titol: "Rellotge Analògic*",
     element: <RellotgeAnalogic />,
+  },
+  { path: "sumador", titol: "Sumador*", element: <Sumador /> },
+  {
+    path: "tipcalculator",
+    titol: "Tip Calculator*",
+    element: <TipCalculator />,
   },
   {
     path: "vectorsencers",
