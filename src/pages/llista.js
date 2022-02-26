@@ -19,7 +19,7 @@ import Contact from "./Contact";
 const llista = [
   { path: "comptador", titol: "Comptador", element: <Comptador /> },
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
-  { path: "acordio", titol: "Menús desplegables", element: <Acordio /> },
+  { path: "acordio", titol: "Menús desplegables*", element: <Acordio /> },
   { path: "carrusel", titol: "Carrusel", element: <Carrusel /> },
   { path: "togglebutton", titol: "Toggle Button", element: <ToggleButton /> },
   { path: "groupbutton", titol: "Group Button", element: <GroupButton /> },
@@ -29,7 +29,7 @@ const llista = [
     element: <ToggleableSideBar />,
   },
   { path: "tabs", titol: "Tabs", element: <Tabs /> },
-  { path: "tictactoe", titol: "Tres en Ratlla", element: <TicTacToe /> },
+  { path: "tictactoe", titol: "Tres en Ratlla*", element: <TicTacToe /> },
   {
     path: "vectorsencers",
     titol: "Vector de sencers",
