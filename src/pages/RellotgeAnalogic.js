@@ -1,47 +1,51 @@
 import "./RellotgeAnalogic.css";
-import { useState } from "react";
 
 export default function RellotgeAnalogic() {
-  const [clicked, setClicked] = useState(true);
-
   function dia_i_hora() {
     const d = new Date();
-    const months = [
-      "gener",
-      "febrer",
-      "març",
-      "abril",
-      "maig",
-      "juny",
-      "juliol",
-      "agost",
-      "setembre",
-      "octubre",
-      "novembre",
-      "desembre",
-    ];
-    const days = [
-      "diumenge",
-      "dilluns",
-      "dimarts",
-      "dimecres",
-      "dijous",
-      "divendres",
-      "dissabte",
-    ];
-    let nomdia = d.getDay();
-    let any = d.getFullYear();
-    let mes = d.getMonth();
-    let dia = d.getDate();
-    let hora = ("0" + d.getHours()).slice(-2);
-    let min = ("0" + d.getMinutes()).slice(-2);
-    let sec = ("0" + d.getSeconds()).slice(-2);
+    let hora_graus = (d.getHours() % 12) * 30;
+    let min_graus = d.getMinutes() * 6;
+    let sec_graus = d.getSeconds() * 6;
     return (
-      <div className={clicked ? "mostra_watch" : "amaga_watch"}>
-        {days[nomdia] + ", " + dia}
-        {mes === 4 || mes === 8 || mes === 10 ? " d'" : " de "}
-        {months[mes] + " de " + any} <br />
-        {hora + ":" + min + ":" + sec}
+      <div className="mostra_watch">
+        <div id="dotze">12</div>
+        <div id="tres">3</div>
+        <div id="sis">6</div>
+        <div id="nou">9</div>
+        <svg viewBox="0 0 100 100" width="120" height="120">
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="black"
+            stroke-width="1"
+            fill="gold"
+          ></circle>
+          <path
+            id="hora"
+            transform={"rotate(" + hora_graus + " 50 50)"}
+            d="M50 50v-20"
+            stroke="#000"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+          <path
+            id="minut"
+            transform={"rotate(" + min_graus + " 50 50)"}
+            d="M50 50v-35"
+            stroke="#000"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            id="segon"
+            transform={"rotate(" + sec_graus + " 50 50)"}
+            d="M50 50v-37"
+            stroke="#000"
+            stroke-width="1"
+            stroke-linecap="round"
+          />
+        </svg>
       </div>
     );
   }
@@ -50,13 +54,7 @@ export default function RellotgeAnalogic() {
     <div id="rellotgeanalogic">
       <h1>RELLOTGE ANALÒGIC</h1>
       <br />
-      <br />
-      <br />
-      <div className="pastilleta2">
-        {dia_i_hora() && setInterval(() => clicked, 1000)}
-      </div>
-      <br />
-      <button onClick={() => setClicked(!clicked)}>TOGGLE RELLOTGE</button>
+      <div className="pastilleta2">{dia_i_hora()}</div>
     </div>
   );
 }
