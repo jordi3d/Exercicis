@@ -33,7 +33,7 @@ export default function Layout() {
               border="0"
               width="263"
               alt=""
-              class="img_ad"
+              className="img_ad"
               rel="noreferrer"
             />
           </a>
