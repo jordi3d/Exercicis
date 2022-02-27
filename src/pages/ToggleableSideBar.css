@@ -11,6 +11,7 @@
     background-color: lightgray;
     width: 100px;
     height: 25px;
+    cursor: pointer;
 }
 
 #sidebar {
@@ -18,34 +19,23 @@
     position: absolute;
     top: 25px;
     left: 0px;
-    bottom: 0px;
+    bottom: 100px;
+    width: 0px;
     background-color: red;
 }
-
-
-/*
-.desplegat {
-    /*display: block;* /
-    animation-name: slideout;
-}
-
-.tancat {
-    /*display: none;* /
-    animation-name: slidein;
-}*/
 
 @keyframes slideout {
     from {
         width: 0px;
     }
     to {
-        width: 150px;
+        width: 200px;
     }
 }
 
 @keyframes slidein {
     from {
-        width: 150px;
+        width: 200px;
     }
     to {
         width: 0px;
