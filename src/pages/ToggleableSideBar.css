@@ -3,13 +3,13 @@
     top: 80px;
     z-index: 0;
     height: 82%;
-    width: 50%;
+    width: 400px;
     background-color: green;
 }
 
 #boto {
     background-color: lightgray;
-    width: 100px;
+    width: 28px;
     height: 25px;
     cursor: pointer;
 }

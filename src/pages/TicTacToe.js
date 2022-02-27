@@ -39,6 +39,7 @@ export default function TicTacToe() {
     if (tmp2.length) {
       for (let j = 0; j < tmp2.length; j++) tmp2[j].className = "casella";
     }
+    return false;
   }
 
   function fae(tauler, seg) {
@@ -134,6 +135,7 @@ export default function TicTacToe() {
       setPartida(tauler);
       fae(partida, posicio);
     } else alert("clica en una casella buida");
+    return false;
   }
   return (
     <div id="tictactoe">
@@ -153,7 +155,7 @@ export default function TicTacToe() {
       <br />
       <br />
       <div className="separador"></div>
-      <button onClick={() => reset()}>RESET</button>
+      <button onClick={() => reset()}>&nbsp;RESET&nbsp;</button>
     </div>
   );
 }
