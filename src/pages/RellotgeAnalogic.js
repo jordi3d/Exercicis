@@ -24,7 +24,7 @@ export default function RellotgeAnalogic() {
       sec_graus.toString(),
       txt4
     );
-    /* return (
+    /*return (
       <div className="mostra_watch">
         <div id="dotze">12</div>
         <div id="tres">3</div>
@@ -67,10 +67,21 @@ export default function RellotgeAnalogic() {
       </div>
     );*/
   }
+  /*const RellotgeA = () => {
+    setInterval(() => {
+      dia_i_hora();
+    }, 1000);
+  };*/
   return (
     <div id="rellotgeanalogic">
       <h1>RELLOTGE ANALÒGIC</h1>
       <br />
+      {/*<RellotgeA />*/}
+      {() => {
+        setInterval(() => {
+          dia_i_hora();
+        }, 1000);
+      }}
       <button
         onClick={() => {
           setInterval(() => {
