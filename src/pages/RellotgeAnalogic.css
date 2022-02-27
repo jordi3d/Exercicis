@@ -3,27 +3,27 @@
 }
 
 #tres {
-    position: absolute;
-    left: 571px;
-    top: 245px;
+    position: relative;
+    left: 39px;
+    top: 106px;
 }
 
 #sis {
-    position: absolute;
-    left: 535px;
-    top: 283px;
+    position: relative;
+    left: 0px;
+    top: 127px;
 }
 
 #nou {
-    position: absolute;
-    left: 495px;
-    top: 245px;
+    position: relative;
+    left: -39px;
+    top: 68px;
 }
 
 #dotze {
-    position: absolute;
-    left: 530px;
-    top: 210px;
+    position: relative;
+    left: 0px;
+    top: 90px;
 }
 
 .pastilleta2 {
