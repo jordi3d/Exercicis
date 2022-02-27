@@ -50,6 +50,15 @@ export default function Carrusel() {
           ></div>
         ))}
       </div>
+      <div
+        id="tancador"
+        className={amaga}
+        onClick={() =>
+          (document.getElementById("carrusel").style.display = "none")
+        }
+      >
+        X
+      </div>
     </div>
   );
 }
