@@ -36,12 +36,12 @@ const llista = [
   { path: "tictactoe", titol: "Tres en Ratlla*", element: <TicTacToe /> },
   {
     path: "rellotgedigital",
-    titol: "Rellotge Digital*",
+    titol: "Rellotge Digital",
     element: <RellotgeDigital />,
   },
   {
     path: "rellotgeanalogic",
-    titol: "Rellotge Analògic*",
+    titol: "Rellotge Analògic",
     element: <RellotgeAnalogic />,
   },
   { path: "sumador", titol: "Sumador", element: <Sumador /> },

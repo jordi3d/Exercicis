@@ -36,11 +36,11 @@ Ongoing 26/2/22
 
 ## Exercici Rellotge Digital
 
-Ongoing 26/2/22
+Fet!
 
 ## Exercici Rellotge Analògic
 
-Ongoing 26/2/22
+Fet!
 
 ### Exercici Sumador de números
 
