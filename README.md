@@ -34,11 +34,11 @@ Fet!
 
 Ongoing 26/2/22
 
-## Exercici Rellotge Digital
+### Exercici Rellotge Digital
 
 Fet!
 
-## Exercici Rellotge Analògic
+### Exercici Rellotge Analògic
 
 Fet!
 
