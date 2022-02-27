@@ -77,11 +77,6 @@ export default function RellotgeAnalogic() {
       <h1>RELLOTGE ANALÒGIC</h1>
       <br />
       {/*<RellotgeA />*/}
-      {() => {
-        setInterval(() => {
-          dia_i_hora();
-        }, 1000);
-      }}
       <button
         onClick={() => {
           setInterval(() => {
