@@ -18,8 +18,8 @@ export default function ToggleableSideBar() {
           <path
             d="M1 1h8M1 4h 8M1 7h8"
             stroke="#000"
-            stroke-width="2"
-            stroke-linecap="round"
+            strokeWidth="2"
+            strokeLinecap="round"
           />
         </svg>
       </div>
