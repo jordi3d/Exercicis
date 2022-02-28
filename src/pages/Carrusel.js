@@ -53,7 +53,7 @@ export default function Carrusel() {
         ))}
       </div>
       <div id="tancador" className={amaga} onClick={() => setTancat(true)}>
-        Y
+        X
       </div>
     </div>
   );
