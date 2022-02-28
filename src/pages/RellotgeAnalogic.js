@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./RellotgeAnalogic.css";
 
 export default function RellotgeAnalogic() {
@@ -72,20 +73,17 @@ export default function RellotgeAnalogic() {
       dia_i_hora();
     }, 1000);
   };*/
+  useEffect(() => {
+    setInterval(() => {
+      dia_i_hora();
+    }, 1000);
+  }, []);
   return (
     <div id="rellotgeanalogic">
       <h1>RELLOTGE ANALÒGIC</h1>
       <br />
       {/*<RellotgeA />*/}
-      <button
-        onClick={() => {
-          setInterval(() => {
-            dia_i_hora();
-          }, 1000);
-        }}
-      >
-        &nbsp;VEURE RELLOTGE&nbsp;
-      </button>
+      <button onClick={() => {}}>&nbsp;VEURE RELLOTGE&nbsp;</button>
       <div id="rellotget"></div>
     </div>
   );

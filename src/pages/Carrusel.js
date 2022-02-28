@@ -11,8 +11,10 @@ let fotos = [
 ].map((f) => process.env.PUBLIC_URL + f);
 
 export default function Carrusel() {
+  const [tancat, setTancat] = useState(false);
   const [imatge, setImatge] = useState(0);
   const [amaga, setMostra] = useState("amaga");
+  if (tancat) return null;
   return (
     <div
       id="carrusel"
@@ -50,14 +52,8 @@ export default function Carrusel() {
           ></div>
         ))}
       </div>
-      <div
-        id="tancador"
-        className={amaga}
-        onClick={() =>
-          (document.getElementById("carrusel").style.display = "none")
-        }
-      >
-        X
+      <div id="tancador" className={amaga} onClick={() => setTancat(true)}>
+        Y
       </div>
     </div>
   );
