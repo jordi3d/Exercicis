@@ -32,7 +32,7 @@ Fet!
 
 ## Exercici 3 en ratlla
 
-Ongoing 26/2/22
+Fet! Peró encara no juga sol amb AI
 
 ### Exercici Rellotge Digital
 

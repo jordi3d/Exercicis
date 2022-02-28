@@ -32,12 +32,12 @@ export default function TicTacToe() {
     let tmp = document.getElementsByClassName("guanya");
     console.log("guanya: ", tmp, tmp.length);
     if (tmp.length) {
-      for (let i = 0; i < tmp.length; i++) tmp[i].className = "casella";
+      for (let i = tmp.length - 1; i >= 0; i--) tmp[i].className = "casella";
     }
     let tmp2 = document.getElementsByClassName("guanyes");
     console.log("guanyes: ", tmp2, tmp2.length);
     if (tmp2.length) {
-      for (let j = 0; j < tmp2.length; j++) tmp2[j].className = "casella";
+      for (let j = tmp2.length - 1; j >= 0; j--) tmp2[j].className = "casella";
     }
     return false;
   }
