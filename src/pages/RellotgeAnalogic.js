@@ -68,11 +68,6 @@ export default function RellotgeAnalogic() {
       </div>
     );*/
   }
-  /*const RellotgeA = () => {
-    setInterval(() => {
-      dia_i_hora();
-    }, 1000);
-  };*/
   useEffect(() => {
     setInterval(() => {
       dia_i_hora();
@@ -81,9 +76,6 @@ export default function RellotgeAnalogic() {
   return (
     <div id="rellotgeanalogic">
       <h1>RELLOTGE ANALÒGIC</h1>
-      <br />
-      {/*<RellotgeA />*/}
-      <button onClick={() => {}}>&nbsp;VEURE RELLOTGE&nbsp;</button>
       <div id="rellotget"></div>
     </div>
   );
