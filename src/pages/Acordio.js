@@ -8,6 +8,7 @@ export default function Acordio() {
   const [desplega2, setDesplega2] = useState(true);
   const [desplega3, setDesplega3] = useState(true);
   let menus = ["Títol0", "Títol1", "Títol2", "Títol3", "Títol4"];
+  let submenus = [true, false, true, false, false];
   let mostrals = [desplega, desplega0, desplega1, desplega2, desplega3];
 
   function fesclick(elem) {
@@ -51,17 +52,20 @@ export default function Acordio() {
   }
   return (
     <div id="Acordio">
-      <ul>
-        {menus.map((n, index) => (
-          <li
-            className="Acordio__entrada"
-            key={n}
-            onClick={() => fesclick(index)}
-          >
-            {!mostrals[index] && menus[index]}
-          </li>
-        ))}
-      </ul>
+      {menus.map((n, index) => (
+        <div
+          className="Acordio__entrada"
+          key={n}
+          onClick={() => fesclick(index)}
+        >
+          {!mostrals[index] && menus[index]}
+          {!mostrals[index] && (
+            <div className={submenus[index] ? "tefills" : "notefills"}>
+              &gt;&nbsp;&nbsp;&nbsp;
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 }

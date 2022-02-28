@@ -1,15 +1,44 @@
 #Acordio {
-    background-color: red;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .Acordio__entrada {
-    background-color: blue;
     color: white;
     list-style: none;
     text-align: left;
+    padding-top: 10px;
     padding-left: 10px;
-    width: 120px;
+    width: 200px;
+    height: 50px;
+    opacity: 0.8;
     font-size: x-large;
     line-height: 1.5em;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.Acordio__entrada:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.tefills {
+    display: inline;
+    text-align: right;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    transform: rotate(90deg);
+}
+
+.tefills:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.notefills {
+    display: none;
 }
