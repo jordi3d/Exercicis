@@ -1,25 +1,24 @@
 import "./Comptador.css";
-import { useState } from "react";
+import { useReducer } from "react";
+import { counter, increment, reset } from "./counter";
 
 export default function Comptador() {
-  const [counter, setCounter] = useState(0);
-  function incrementa(amount) {
-    let tmp = counter + amount;
-    if (tmp > 10 || tmp < 0) return;
-    setCounter(tmp);
-    return;
-  }
+  const [count, dispatch] = useReducer(counter, 0);
+
   return (
     <div id="Comptador">
-      <div id="Comptador__Disp">{counter}</div>
-      <button id="Comptador__Inc" onClick={() => incrementa(1)}>
+      <div id="Comptador__Disp">{count}</div>
+      <button id="Comptador__Inc" onClick={() => dispatch(increment(+1))}>
         +1
       </button>
-      <button id="Comptador__Dec" onClick={() => incrementa(-1)}>
+      <button id="Comptador__Dec" onClick={() => dispatch(increment(-1))}>
         -1
       </button>
-      <button id="Comptador__Mes5" onClick={() => incrementa(5)}>
+      <button id="Comptador__Mes5" onClick={() => dispatch(increment(+5))}>
         +5
+      </button>
+      <button id="Comptador__Reset" onClick={() => dispatch(reset())}>
+        RESET
       </button>
     </div>
   );
